@@ -1,0 +1,9 @@
+{
+  "name": "meetingscribe",
+  "description": "Record meetings (video + audio), transcribe with AI, generate individual work item documents, meeting minutes and summaries. Process any existing MP4 file.",
+  "version": "3.0.0",
+  "author": {
+    "name": "OCS Consulting",
+    "email": "claudeai.ocs@gmail.com"
+  }
+}

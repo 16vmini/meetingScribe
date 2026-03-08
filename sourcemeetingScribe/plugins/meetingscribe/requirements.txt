@@ -1,0 +1,51 @@
+# MeetingScribe - Python Dependencies
+# Install with: py -3 -m pip install -r requirements.txt
+
+# Audio capture and processing
+sounddevice>=0.4.0     # Cross-platform audio I/O with WASAPI support  
+soundfile>=0.10.0      # Audio file reading/writing (WAV, FLAC, OGG)
+numpy>=1.19.0          # Numerical operations for audio data
+
+# Image capture and processing
+mss>=6.0.0             # Fast cross-platform screenshot library
+Pillow>=8.0.0          # Image processing and JPEG compression
+
+# System and UI
+psutil>=5.9.0          # Process and system utilities (used by video_recorder)
+opencv-python-headless>=4.5.0  # Computer vision library for video processing
+
+# HTTP requests and API communication
+requests>=2.25.0       # HTTP library for OpenAI API calls
+
+# AI assistant (live meeting assistant via Claude)
+anthropic>=0.40.0      # Anthropic Claude API SDK
+
+# Optional: Enhanced audio processing (if needed)
+# pyaudio>=0.2.11      # Alternative audio library (requires PortAudio)
+
+# Development and testing dependencies (optional)
+# pytest>=6.0.0        # Testing framework
+# black>=21.0.0        # Code formatting  
+# flake8>=3.8.0        # Code linting
+
+# Note: This plugin requires Python 3.7+ and the following system requirements:
+#
+# Windows:
+# - WASAPI audio drivers for system audio capture
+# - Modern graphics drivers for screenshot capture
+# - Sufficient disk space for audio/video storage
+#
+# Audio Setup:
+# - Microphone permissions granted to Python applications
+# - System audio/loopback recording enabled (may require "Stereo Mix" or similar)
+# - Audio devices not exclusively locked by other applications
+#
+# API Requirements:
+# - OpenAI API key with Whisper and GPT-4 access
+# - Sufficient API credits for transcription and notes generation
+# - Reliable internet connection for real-time processing
+#
+# Performance Notes:
+# - Real-time processing is CPU intensive
+# - Large meetings generate significant disk usage
+# - Consider SSD storage for better performance
