@@ -24,8 +24,9 @@ Thumbs.db
 Desktop.ini
 .DS_Store
 
-# Claude Code
-.claude/
+# Claude Code (keep skills, ignore project settings)
+.claude/settings.*
+.claude/projects/
 
 # Secrets
 .env
